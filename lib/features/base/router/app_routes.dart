@@ -7,7 +7,7 @@ abstract class Routes {
   static const String userDetail = '/detail';
   static final _UserDestinations userDestinations = _UserDestinations(users);
 
-  static const String home = '/home';
+  static const String environment = '/environment';
 
   static const String splash = '/splash';
 
@@ -20,7 +20,7 @@ abstract class Routes {
   static const String registration = '/registration';
   static const String registrationStep2 = '/registrationStep2';
 
-  static const String saved = '/saved';
+  static const String body = '/body';
 
   static const String profile = '/profile';
   static const String changePassword = '/changePassword';

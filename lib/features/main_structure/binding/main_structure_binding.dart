@@ -1,9 +1,14 @@
 import 'package:crow/crow.dart';
-import 'package:flutter_structure/features/home/data/data_sources/home_remote_data_source.dart';
-import 'package:flutter_structure/features/home/data/data_sources/home_remote_data_source_impl.dart';
-import 'package:flutter_structure/features/home/data/home_repository_impl.dart';
-import 'package:flutter_structure/features/home/domain/home_repository.dart';
-import 'package:flutter_structure/features/home/presentation/view_models/home_view_model.dart';
+import 'package:flutter_structure/features/body/data/body_repository_impl.dart';
+import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source.dart';
+import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source_impl.dart';
+import 'package:flutter_structure/features/body/domain/body_repository.dart';
+import 'package:flutter_structure/features/body/presentation/view_models/body_view_model.dart';
+import 'package:flutter_structure/features/environment/data/data_sources/home_remote_data_source.dart';
+import 'package:flutter_structure/features/environment/data/data_sources/home_remote_data_source_impl.dart';
+import 'package:flutter_structure/features/environment/data/home_repository_impl.dart';
+import 'package:flutter_structure/features/environment/domain/home_repository.dart';
+import 'package:flutter_structure/features/environment/presentation/view_models/environment_view_model.dart';
 import 'package:flutter_structure/features/main_structure/data/data_sources/main_structure_data_source.dart';
 import 'package:flutter_structure/features/main_structure/data/data_sources/main_structure_data_source_impl.dart';
 import 'package:flutter_structure/features/main_structure/data/main_structure_repository_impl.dart';
@@ -14,11 +19,6 @@ import 'package:flutter_structure/features/profile/data/data_sources/profile_rem
 import 'package:flutter_structure/features/profile/data/profile_repository_impl.dart';
 import 'package:flutter_structure/features/profile/domain/profile_repository.dart';
 import 'package:flutter_structure/features/profile/presentation/view_models/profile_view_model.dart';
-import 'package:flutter_structure/features/saved/data/data_sources/saved_remote_data_source.dart';
-import 'package:flutter_structure/features/saved/data/data_sources/saved_remote_data_source_impl.dart';
-import 'package:flutter_structure/features/saved/data/saved_repository_impl.dart';
-import 'package:flutter_structure/features/saved/domain/saved_repository.dart';
-import 'package:flutter_structure/features/saved/presentation/view_models/saved_view_model.dart';
 import 'package:get/get.dart';
 
 
@@ -27,33 +27,33 @@ class MainStructureBinding extends Binding {
   @override
   void dependencies() {
 
-    //home bindings
-    Get.lazyPut<HomeRemoteDataSource>(HomeRemoteDataSourceImpl.new);
+    //environment bindings
+    Get.lazyPut<EnvironmentRemoteDataSource>(EnvironmentRemoteDataSourceImpl.new);
 
-    Get.lazyPut<HomeRepository>(
-          () => HomeRepositoryImpl(
-        Get.find<HomeRemoteDataSource>(),
+    Get.lazyPut<EnvironmentRepository>(
+          () => EnvironmentRepositoryImpl(
+        Get.find<EnvironmentRemoteDataSource>(),
       ),
     );
 
     Get.lazyPut(
-          () => HomeViewModel(
-        Get.find<HomeRepository>(),
+          () => EnvironmentViewModel(
+        Get.find<EnvironmentRepository>(),
       ),
     );
 
-    //saved binding
-    Get.lazyPut<SavedRemoteDataSource>(SavedRemoteDataSourceImpl.new);
+    //body binding
+    Get.lazyPut<BodyRemoteDataSource>(BodyRemoteDataSourceImpl.new);
 
-    Get.lazyPut<SavedRepository>(
-          () => SavedRepositoryImpl(
-        Get.find<SavedRemoteDataSource>(),
+    Get.lazyPut<BodyRepository>(
+          () => BodyRepositoryImpl(
+        Get.find<BodyRemoteDataSource>(),
       ),
     );
 
     Get.lazyPut(
-          () => SavedViewModel(
-        Get.find<SavedRepository>(),
+          () => BodyViewModel(
+        Get.find<BodyRepository>(),
       ),
     );
 

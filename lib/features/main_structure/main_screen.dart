@@ -42,11 +42,11 @@ class MainScreen extends Screen<MainViewModel> {
           child: Padding(
             padding: const EdgeInsets.all(5.0),
             child: SvgPicture.asset(
-              Images.homeIcon,
+              Images.environmentIcon,
             ),
           ),
         ),
-        label: AppLocalizations.of(Get.context!)!.home,
+        label: AppLocalizations.of(Get.context!)!.environment,
       ),
       BottomNavigationBarItem(
         icon: Container(
@@ -58,18 +58,48 @@ class MainScreen extends Screen<MainViewModel> {
           child: Padding(
             padding: const EdgeInsets.all(5.0),
             child: SvgPicture.asset(
-              Images.savedIcon,
+              Images.bodyIcon,
             ),
           ),
         ),
-        label: AppLocalizations.of(Get.context!)!.saved,
+        label: AppLocalizations.of(Get.context!)!.body,
+      ),
+      BottomNavigationBarItem(
+        icon: Container(
+          width: 64,
+          height: 32,
+          decoration: viewModel.isSecondIndex
+              ? viewModel.selectedIndexDecoration()
+              : null,
+          child: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: SvgPicture.asset(
+              Images.bodyIcon,
+            ),
+          ),
+        ),
+        label: AppLocalizations.of(Get.context!)!.body,
       ),
       BottomNavigationBarItem(
         icon: Container(
           width: 64,
           height: 32,
           padding: const EdgeInsets.all(4),
-          decoration: viewModel.isSecondIndex
+          decoration: viewModel.isThirdIndex
+              ? viewModel.selectedIndexDecoration()
+              : null,
+          child: SvgPicture.asset(
+            Images.profileIcon,
+          ),
+        ),
+        label: AppLocalizations.of(Get.context!)!.profile,
+      ),
+      BottomNavigationBarItem(
+        icon: Container(
+          width: 64,
+          height: 32,
+          padding: const EdgeInsets.all(4),
+          decoration: viewModel.isFourthIndex
               ? viewModel.selectedIndexDecoration()
               : null,
           child: SvgPicture.asset(

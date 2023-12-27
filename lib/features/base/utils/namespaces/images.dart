@@ -15,8 +15,8 @@ extension Images on Never {
   static const String onboarding3 = 'assets/images/Onboarding1.png';
 
   //main structure
-  static const String homeIcon = 'assets/images/homeIcon.svg';
-  static const String savedIcon = 'assets/images/savedIcon.svg';
+  static const String environmentIcon = 'assets/images/environmentIcon.svg';
+  static const String bodyIcon = 'assets/images/bodyIcon.svg';
   static const String profileIcon = 'assets/images/profileIcon.svg';
 
   Widget customSvgAsset({
