@@ -1,5 +1,6 @@
 import 'package:crow/crow.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
 import 'package:flutter_structure/features/profile/presentation/view/widgets/setting_section.dart';
 import 'package:flutter_structure/features/profile/presentation/view/widgets/user_section.dart';
@@ -40,6 +41,18 @@ class ProfileScreen extends Screen<ProfileViewModel> {
                     userSection(viewModel),
                     const Center(child: Text('Custom fields')),
                     settingSection(viewModel),
+                    SizedBox(
+                      height: Get.height * 0.3,
+                    ),
+                    SizedBox(
+                      height: Get.height * 0.02,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 26.0),
+                      child: Html(
+                          data:
+                          'Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>'),
+                    ),
                     SizedBox(
                       height: Get.height * 0.3,
                     ),

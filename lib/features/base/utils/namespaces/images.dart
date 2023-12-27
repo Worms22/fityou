@@ -19,6 +19,12 @@ extension Images on Never {
   static const String bodyIcon = 'assets/images/bodyIcon.svg';
   static const String profileIcon = 'assets/images/profileIcon.svg';
 
+  //environment
+  static const String environmentButtonIcon = 'assets/images/leaf-icon.png';
+  static const String environmentEmptyState = 'assets/images/environment-empty-state.png';
+  static const String fitnessBackground = 'assets/images/fitness-background.png';
+
+
   Widget customSvgAsset({
     String? svgImage,
     double? height,
