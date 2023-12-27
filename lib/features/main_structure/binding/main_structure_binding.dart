@@ -4,6 +4,11 @@ import 'package:flutter_structure/features/body/data/data_sources/body_remote_da
 import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source_impl.dart';
 import 'package:flutter_structure/features/body/domain/body_repository.dart';
 import 'package:flutter_structure/features/body/presentation/view_models/body_view_model.dart';
+import 'package:flutter_structure/features/culture/data/culture_repository_impl.dart';
+import 'package:flutter_structure/features/culture/data/data_sources/culture_remote_data_source.dart';
+import 'package:flutter_structure/features/culture/data/data_sources/culture_remote_data_source_impl.dart';
+import 'package:flutter_structure/features/culture/domain/culture_repository.dart';
+import 'package:flutter_structure/features/culture/presentation/view_models/culture_view_model.dart';
 import 'package:flutter_structure/features/environment/data/data_sources/home_remote_data_source.dart';
 import 'package:flutter_structure/features/environment/data/data_sources/home_remote_data_source_impl.dart';
 import 'package:flutter_structure/features/environment/data/home_repository_impl.dart';
@@ -54,6 +59,21 @@ class MainStructureBinding extends Binding {
     Get.lazyPut(
           () => BodyViewModel(
         Get.find<BodyRepository>(),
+      ),
+    );
+
+    //culture binding
+    Get.lazyPut<CultureRemoteDataSource>(CultureRemoteDataSourceImpl.new);
+
+    Get.lazyPut<CultureRepository>(
+          () => CultureRepositoryImpl(
+        Get.find<CultureRemoteDataSource>(),
+      ),
+    );
+
+    Get.lazyPut(
+          () => CultureViewModel(
+        Get.find<CultureRepository>(),
       ),
     );
 

@@ -22,7 +22,13 @@ extension Images on Never {
   //environment
   static const String environmentButtonIcon = 'assets/images/leaf-icon.png';
   static const String environmentEmptyState = 'assets/images/environment-empty-state.png';
+
+  //fitness
   static const String fitnessBackground = 'assets/images/fitness-background.png';
+
+  //culture
+  static const String cultureBackground = 'assets/images/culture-background.jpeg';
+
 
 
   Widget customSvgAsset({
