@@ -27,6 +27,7 @@ extension Images on Never {
 
   //fitness
   static const String fitnessBackground = 'assets/images/fitness-background.png';
+  static const String fitnessButtonIcon = 'assets/images/start_runner.png';
 
   //culture
   static const String cultureBackground = 'assets/images/culture-background.jpeg';

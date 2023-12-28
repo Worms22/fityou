@@ -1,5 +1,7 @@
 import 'package:crow/crow.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_structure/features/base/genaral_entities/activity_entity.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
 import 'package:flutter_structure/features/base/widgets/single_activity_button.dart';
@@ -21,7 +23,7 @@ class CultureScreen extends Screen<CultureViewModel> {
                 appBar: AppBar(
                   backgroundColor: AppColors.cultureYellow,
                   title: Text(
-                    'Cultura',
+                    AppLocalizations.of(Get.context!)!.culture,
                     style: GoogleFonts.montserrat(
                       fontSize: 35,
                       fontWeight: FontWeight.w600,
@@ -49,53 +51,20 @@ class CultureScreen extends Screen<CultureViewModel> {
                             SizedBox(
                               height: Get.height * 0.1,
                             ),
-                            singleActivityButton(
-                              title: 'Utilizzare mezzi pubblici',
-                              width: 300,
-                              type: "daa",
-                              icon: Images.cultureButtonIcon,
-                              color: AppColors.cultureYellowAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                              title: 'Utilizzare mezzi pubblici',
-                              width: 300,
-                              type: "daa",
-                              icon: Images.environmentButtonIcon,
-                              color: AppColors.cultureYellowAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                              title: 'Utilizzare mezzi pubblici',
-                              width: 300,
-                              type: "daa",
-                              icon: Images.environmentButtonIcon,
-                              color: AppColors.cultureYellowAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                              title: 'Utilizzare mezzi pubblici',
-                              width: 300,
-                              type: "daa",
-                              icon: Images.environmentButtonIcon,
-                              color: AppColors.cultureYellowAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                              title: 'Utilizzare mezzi pubblici',
-                              width: 300,
-                              type: "daa",
-                              icon: Images.environmentButtonIcon,
-                              color: AppColors.cultureYellowAccent,
-                            ),
+                            for (final ActivityEntity item
+                            in viewModel.buttonList)
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 20,
+                                ),
+                                child: singleActivityButton(
+                                  width: 300,
+                                  type: item.type,
+                                  icon: item.icon,
+                                  title: item.title,
+                                  color: item.color,
+                                ),
+                              ),
                           ],
                         ),
                       ],

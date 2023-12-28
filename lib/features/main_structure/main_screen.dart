@@ -78,7 +78,7 @@ class MainScreen extends Screen<MainViewModel> {
             ),
           ),
         ),
-        label: AppLocalizations.of(Get.context!)!.body,
+        label: AppLocalizations.of(Get.context!)!.culture,
       ),
       BottomNavigationBarItem(
         icon: Container(

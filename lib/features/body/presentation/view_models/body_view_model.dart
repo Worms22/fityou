@@ -27,31 +27,31 @@ class BodyViewModel extends ViewModel with StateMixin<dynamic> {
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.runningTitle,
       type: 'type',
-      icon: Images.environmentButtonIcon,
+      icon: Images.fitnessButtonIcon,
       color: AppColors.bodyPinkAccent,
     ),
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.stepCounterTitle,
       type: 'type',
-      icon: Images.environmentButtonIcon,
+      icon: Images.fitnessButtonIcon,
       color: AppColors.bodyPinkAccent,
     ),
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.flexTitle,
       type: 'type',
-      icon: Images.environmentButtonIcon,
+      icon: Images.fitnessButtonIcon,
       color: AppColors.bodyPinkAccent,
     ),
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.weightIndexTitle,
       type: 'type',
-      icon: Images.environmentButtonIcon,
+      icon: Images.fitnessButtonIcon,
       color: AppColors.bodyPinkAccent,
     ),
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.sportTitle,
       type: 'type',
-      icon: Images.environmentButtonIcon,
+      icon: Images.fitnessButtonIcon,
       color: AppColors.bodyPinkAccent,
     ),
   ];
