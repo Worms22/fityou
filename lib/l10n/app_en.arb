@@ -37,8 +37,6 @@
   "registrationErrorPassword": "Not empty password",
   "registrationErrorConfirmPassword": "You should use the same password",
   "registrationNextStep": "Next",
-  "environment": "Environment",
-  "body": "Body",
   "profile" :"Profile",
   "privacyPolicyProfile": "Privacy Policy",
   "termsProfile": "Termini e condizioni",
@@ -50,5 +48,18 @@
   "cancel": "Annulla",
   "deleteButton": "Conferma",
   "version":"Version",
-  "save": "Save"
+  "save": "Save",
+  "environment": "Environment",
+  "body": "Body",
+  "culture": "Culture",
+  "interiorPower": "Interior power",
+  "publicTransportTitle": "Use public transport",
+  "publicTransportSubtitle": "Use public transport balbabla baslfslkf",
+  "shareCarTitle": "Share car with friends for a trip",
+  "shareCarSubtitle": "Share car with friends for a trip abbalbaablablandn",
+  "walkInsteadUseCarTitle": "Walk instead use car",
+  "walkInsteadUseCarSubtitle": "Walk instead use car balbalaljlajal al al",
+  "eatVeganTitle": "Eat vegan",
+  "eatVeganSibtitle": "Eat vegan akalj flks fjakls òf"
+
 }

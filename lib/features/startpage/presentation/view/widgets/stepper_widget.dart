@@ -12,6 +12,8 @@ Widget stepperWidget(int index) {
         stepperWidgetEmpty(),
         const SizedBox(width: 5,),
         stepperWidgetEmpty(),
+        const SizedBox(width: 5,),
+        stepperWidgetEmpty(),
         const Spacer(),
       ],
     );
@@ -25,6 +27,23 @@ Widget stepperWidget(int index) {
         stepperWidgetFull(),
         const SizedBox(width: 5,),
         stepperWidgetEmpty(),
+        const SizedBox(width: 5,),
+        stepperWidgetEmpty(),
+        const Spacer(),
+      ],
+    );
+  }
+  if (index == 2) {
+    return Row(
+      children: <Widget>[
+        const Spacer(),
+        stepperWidgetEmpty(),
+        const SizedBox(width: 5,),
+        stepperWidgetEmpty(),
+        const SizedBox(width: 5,),
+        stepperWidgetFull(),
+        const SizedBox(width: 5,),
+        stepperWidgetEmpty(),
         const Spacer(),
       ],
     );
@@ -32,6 +51,8 @@ Widget stepperWidget(int index) {
   return Row(
     children: <Widget>[
       const Spacer(),
+      stepperWidgetEmpty(),
+      const SizedBox(width: 5,),
       stepperWidgetEmpty(),
       const SizedBox(width: 5,),
       stepperWidgetEmpty(),

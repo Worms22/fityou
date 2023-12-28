@@ -41,7 +41,7 @@ class MainScreen extends Screen<MainViewModel> {
               : null,
           child: Padding(
             padding: const EdgeInsets.all(5.0),
-            child: SvgPicture.asset(
+            child: Image.asset(
               Images.environmentIcon,
             ),
           ),
@@ -57,7 +57,7 @@ class MainScreen extends Screen<MainViewModel> {
               : null,
           child: Padding(
             padding: const EdgeInsets.all(5.0),
-            child: SvgPicture.asset(
+            child: Image.asset(
               Images.bodyIcon,
             ),
           ),
@@ -73,8 +73,8 @@ class MainScreen extends Screen<MainViewModel> {
               : null,
           child: Padding(
             padding: const EdgeInsets.all(5.0),
-            child: SvgPicture.asset(
-              Images.bodyIcon,
+            child: Image.asset(
+              Images.mindIcon,
             ),
           ),
         ),
@@ -88,8 +88,8 @@ class MainScreen extends Screen<MainViewModel> {
           decoration: viewModel.isThirdIndex
               ? viewModel.selectedIndexDecoration()
               : null,
-          child: SvgPicture.asset(
-            Images.profileIcon,
+          child: Image.asset(
+            Images.interiorIcon,
           ),
         ),
         label: AppLocalizations.of(Get.context!)!.profile,

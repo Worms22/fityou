@@ -14,6 +14,11 @@ import 'package:flutter_structure/features/environment/data/data_sources/home_re
 import 'package:flutter_structure/features/environment/data/home_repository_impl.dart';
 import 'package:flutter_structure/features/environment/domain/home_repository.dart';
 import 'package:flutter_structure/features/environment/presentation/view_models/environment_view_model.dart';
+import 'package:flutter_structure/features/interior/data/data_sources/interior_remote_data_source.dart';
+import 'package:flutter_structure/features/interior/data/data_sources/interior_remote_data_source_impl.dart';
+import 'package:flutter_structure/features/interior/data/interior_repository_impl.dart';
+import 'package:flutter_structure/features/interior/domain/interior_repository.dart';
+import 'package:flutter_structure/features/interior/presentation/view_models/interior_view_model.dart';
 import 'package:flutter_structure/features/main_structure/data/data_sources/main_structure_data_source.dart';
 import 'package:flutter_structure/features/main_structure/data/data_sources/main_structure_data_source_impl.dart';
 import 'package:flutter_structure/features/main_structure/data/main_structure_repository_impl.dart';
@@ -74,6 +79,22 @@ class MainStructureBinding extends Binding {
     Get.lazyPut(
           () => CultureViewModel(
         Get.find<CultureRepository>(),
+      ),
+    );
+
+    //interior binding
+
+    Get.lazyPut<InteriorRemoteDataSource>(InteriorRemoteDataSourceImpl.new);
+
+    Get.lazyPut<InteriorRepository>(
+          () => InteriorRepositoryImpl(
+        Get.find<InteriorRemoteDataSource>(),
+      ),
+    );
+
+    Get.lazyPut(
+          () => InteriorViewModel(
+        Get.find<InteriorRepository>(),
       ),
     );
 

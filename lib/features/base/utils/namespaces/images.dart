@@ -15,8 +15,10 @@ extension Images on Never {
   static const String onboarding3 = 'assets/images/Onboarding1.png';
 
   //main structure
-  static const String environmentIcon = 'assets/images/environmentIcon.svg';
-  static const String bodyIcon = 'assets/images/bodyIcon.svg';
+  static const String environmentIcon = 'assets/images/icon_env.png';
+  static const String bodyIcon = 'assets/images/icons-body.png';
+  static const String mindIcon = 'assets/images/mind.png';
+  static const String interiorIcon = 'assets/images/icon-interior.png';
   static const String profileIcon = 'assets/images/profileIcon.svg';
 
   //environment
@@ -28,7 +30,11 @@ extension Images on Never {
 
   //culture
   static const String cultureBackground = 'assets/images/culture-background.jpeg';
+  static const String cultureButtonIcon = 'assets/images/icon-book.png';
 
+
+  //interior
+  static const String interiorBackground = 'assets/images/interior-background.png';
 
 
   Widget customSvgAsset({

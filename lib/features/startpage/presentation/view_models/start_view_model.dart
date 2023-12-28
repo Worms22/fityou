@@ -13,17 +13,22 @@ class StartViewModel extends ViewModel with StateMixin<dynamic> {
     OnboardingEntity(
       title: AppLocalizations.of(Get.context!)!.onboardingTitle1,
       subtitle: AppLocalizations.of(Get.context!)!.onboardingSubtitle1,
-      image: Images.onboarding1,
+      image: Images.environmentEmptyState,
     ),
     OnboardingEntity(
       title: AppLocalizations.of(Get.context!)!.onboardingTitle2,
       subtitle: AppLocalizations.of(Get.context!)!.onboardingSubtitle2,
-      image: Images.onboarding2,
+      image: Images.fitnessBackground,
     ),
     OnboardingEntity(
       title: AppLocalizations.of(Get.context!)!.onboardingTitle3,
       subtitle: AppLocalizations.of(Get.context!)!.onboardingSubtitle3,
-      image: Images.onboarding3,
+      image: Images.cultureBackground,
+    ),
+    OnboardingEntity(
+      title: AppLocalizations.of(Get.context!)!.onboardingTitle3,
+      subtitle: AppLocalizations.of(Get.context!)!.onboardingSubtitle3,
+      image: Images.interiorBackground,
     ),
   ];
 

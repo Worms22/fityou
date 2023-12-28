@@ -37,8 +37,6 @@
   "registrationErrorPassword": "La password non può essere vuota",
   "registrationErrorConfirmPassword": "La password confermata deve essere uguale",
   "registrationNextStep": "Avanti",
-  "environment": "Environment",
-  "body": "Body",
   "profile" :"Profile",
   "privacyPolicyProfile": "Privacy Policy",
   "termsProfile": "Termini e condizioni",
@@ -50,6 +48,18 @@
   "cancel": "Annulla",
   "deleteButton": "Conferma",
   "version":"Versione",
-  "save": "Salva"
+  "save": "Salva",
+  "environment": "Ambiente",
+  "body": "Corpo",
+  "culture": "Cultura",
+  "interiorPower": "Forza interiore",
+  "publicTransportTitle": "Usare mezzi pubblici",
+  "publicTransportSubtitle": "Use public transport balbabla baslfslkf",
+  "shareCarTitle": "Condividere un viaggio in macchina con gli amici",
+  "shareCarSubtitle": "Share car with friends for a trip abbalbaablablandn",
+  "walkInsteadUseCarTitle": "Camminare invece che usare la macchina",
+  "walkInsteadUseCarSubtitle": "Walk instead use car balbalaljlajal al al",
+  "eatVeganTitle": "Mangiare vegano",
+  "eatVeganSibtitle": "Eat vegan akalj flks fjakls òf"
 
 }

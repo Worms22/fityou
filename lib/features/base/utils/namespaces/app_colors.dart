@@ -22,4 +22,9 @@ extension AppColors on Never {
   static const Color cultureYellowAccent = Color(0xffffe566);
   static const Color cultureYellowImage = Color(0xffffd000);
 
+  //interior
+  static const Color interiorBlue = Color(0xffcaf0f8);
+  static const Color interiorBlueAccent = Color(0xff48cae4);
+
+
 }
