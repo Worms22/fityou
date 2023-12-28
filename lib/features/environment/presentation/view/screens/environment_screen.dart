@@ -1,11 +1,14 @@
 import 'package:crow/crow.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
 import 'package:flutter_structure/features/base/widgets/single_activity_button.dart';
+import 'package:flutter_structure/features/environment/domain/entities/env_entity.dart';
 import 'package:flutter_structure/features/environment/presentation/view_models/environment_view_model.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 
 class EnvironmentScreen extends Screen<EnvironmentViewModel> {
   EnvironmentScreen({super.key});
@@ -21,7 +24,7 @@ class EnvironmentScreen extends Screen<EnvironmentViewModel> {
                 appBar: AppBar(
                   backgroundColor: AppColors.environmentGreen,
                   title: Text(
-                    'Ambiente',
+                    AppLocalizations.of(Get.context!)!.environment,
                     style: GoogleFonts.montserrat(
                       fontSize: 35,
                       fontWeight: FontWeight.w600,
@@ -38,62 +41,24 @@ class EnvironmentScreen extends Screen<EnvironmentViewModel> {
                     child: Stack(
                       children: <Widget>[
                         Center(
-                          child: Container(
-                            child: Image.asset(Images.environmentEmptyState),
-                          ),
+                          child: Image.asset(Images.environmentEmptyState),
                         ),
                         ListView(
                           children: <Widget>[
-                            SizedBox(
-                              height: Get.height * 0.1,
-                            ),
-                            singleActivityButton(
-                                title: 'Utilizzare mezzi pubblici',
-                                width: 300,
-                                type: "daa",
-                                icon: Images.environmentButtonIcon,
-                                color: AppColors.environmentGreenAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                                title: 'Utilizzare mezzi pubblici',
-                                width: 300,
-                                type: "daa",
-                                icon: Images.environmentButtonIcon,
-                              color: AppColors.environmentGreenAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                                title: 'Utilizzare mezzi pubblici',
-                                width: 300,
-                                type: "daa",
-                                icon: Images.environmentButtonIcon,
-                              color: AppColors.environmentGreenAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                                title: 'Utilizzare mezzi pubblici',
-                                width: 300,
-                                type: "daa",
-                                icon: Images.environmentButtonIcon,
-                              color: AppColors.environmentGreenAccent,
-                            ),
-                            SizedBox(
-                              height: Get.height * 0.05,
-                            ),
-                            singleActivityButton(
-                                title: 'Utilizzare mezzi pubblici',
-                                width: 300,
-                                type: "daa",
-                                icon: Images.environmentButtonIcon,
-                              color: AppColors.environmentGreenAccent,
-                            ),
+                            SizedBox(height: Get.height * 0.1,),
+                            for (final EnvEntity item in viewModel.buttonList)
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 20,
+                                ),
+                                child: singleActivityButton(
+                                  width: 300,
+                                  type: item.type,
+                                  icon: item.icon,
+                                  title: item.title,
+                                  color: item.color,
+                                ),
+                              ),
                           ],
                         ),
                       ],
