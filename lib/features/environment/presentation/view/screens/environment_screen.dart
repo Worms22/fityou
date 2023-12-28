@@ -4,7 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
 import 'package:flutter_structure/features/base/widgets/single_activity_button.dart';
-import 'package:flutter_structure/features/environment/domain/entities/env_entity.dart';
+import 'package:flutter_structure/features/base/genaral_entities/activity_entity.dart';
 import 'package:flutter_structure/features/environment/presentation/view_models/environment_view_model.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -46,7 +46,7 @@ class EnvironmentScreen extends Screen<EnvironmentViewModel> {
                         ListView(
                           children: <Widget>[
                             SizedBox(height: Get.height * 0.1,),
-                            for (final EnvEntity item in viewModel.buttonList)
+                            for (final ActivityEntity item in viewModel.buttonList)
                               Padding(
                                 padding: const EdgeInsets.symmetric(
                                   vertical: 20,

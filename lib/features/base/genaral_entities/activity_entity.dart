@@ -1,8 +1,8 @@
 import 'package:crow/crow.dart';
 import 'package:flutter/material.dart';
 
-class EnvEntity extends Entity {
-  EnvEntity({
+class ActivityEntity extends Entity {
+  ActivityEntity({
     required this.title,
     required this.type,
     required this.icon,
