@@ -22,33 +22,53 @@ class CultureViewModel extends ViewModel with StateMixin<dynamic> {
   RxBool isConnected = true.obs;
   String detailTitle = '';
   String? token;
+
+
   List<ActivityEntity> buttonList = <ActivityEntity>[
     ActivityEntity(
-      title: AppLocalizations.of(Get.context!)!.runningTitle,
+      title: AppLocalizations.of(Get.context!)!.learnTitle,
       type: 'type',
       icon: Images.cultureButtonIcon,
       color: AppColors.cultureYellowAccent,
     ),
     ActivityEntity(
-      title: AppLocalizations.of(Get.context!)!.stepCounterTitle,
+      title: AppLocalizations.of(Get.context!)!.readTitle,
       type: 'type',
       icon: Images.cultureButtonIcon,
       color: AppColors.cultureYellowAccent,
     ),
     ActivityEntity(
-      title: AppLocalizations.of(Get.context!)!.flexTitle,
+      title: AppLocalizations.of(Get.context!)!.listenNewsTitle,
       type: 'type',
       icon: Images.cultureButtonIcon,
       color: AppColors.cultureYellowAccent,
     ),
     ActivityEntity(
-      title: AppLocalizations.of(Get.context!)!.weightIndexTitle,
+      title: AppLocalizations.of(Get.context!)!.otherTitle,
       type: 'type',
       icon: Images.cultureButtonIcon,
       color: AppColors.cultureYellowAccent,
     ),
     ActivityEntity(
-      title: AppLocalizations.of(Get.context!)!.sportTitle,
+      title: AppLocalizations.of(Get.context!)!.workTitle,
+      type: 'type',
+      icon: Images.cultureButtonIcon,
+      color: AppColors.cultureYellowAccent,
+    ),
+    ActivityEntity(
+      title: AppLocalizations.of(Get.context!)!.museumTitle,
+      type: 'type',
+      icon: Images.cultureButtonIcon,
+      color: AppColors.cultureYellowAccent,
+    ),
+    ActivityEntity(
+      title: AppLocalizations.of(Get.context!)!.monumentsTitle,
+      type: 'type',
+      icon: Images.cultureButtonIcon,
+      color: AppColors.cultureYellowAccent,
+    ),
+    ActivityEntity(
+      title: AppLocalizations.of(Get.context!)!.cityTitle,
       type: 'type',
       icon: Images.cultureButtonIcon,
       color: AppColors.cultureYellowAccent,

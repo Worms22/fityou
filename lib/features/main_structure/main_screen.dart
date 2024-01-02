@@ -92,7 +92,7 @@ class MainScreen extends Screen<MainViewModel> {
             Images.interiorIcon,
           ),
         ),
-        label: AppLocalizations.of(Get.context!)!.profile,
+        label: AppLocalizations.of(Get.context!)!.interiorPower,
       ),
       BottomNavigationBarItem(
         icon: Container(

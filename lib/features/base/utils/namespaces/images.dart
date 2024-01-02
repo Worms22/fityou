@@ -36,6 +36,7 @@ extension Images on Never {
 
   //interior
   static const String interiorBackground = 'assets/images/interior-background.png';
+  static const String mindButtonIcon = 'assets/images/mind-icon.png';
 
 
   Widget customSvgAsset({
