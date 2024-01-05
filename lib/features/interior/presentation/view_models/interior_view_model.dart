@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_structure/features/base/genaral_entities/activity_entity.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/images.dart';

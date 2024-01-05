@@ -1,4 +1,4 @@
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
@@ -6,15 +6,14 @@ import 'package:flutter_structure/features/main_structure/main_view_model.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-
 class MainScreen extends Screen<MainViewModel> {
   MainScreen({super.key});
 
   @override
   Widget builder() {
     return viewModel.obx(
-          (_) => Scaffold(
-            backgroundColor: Colors.white,
+      (_) => Scaffold(
+        backgroundColor: Colors.white,
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
           onTap: viewModel.changeNavIndex,
@@ -36,7 +35,21 @@ class MainScreen extends Screen<MainViewModel> {
         icon: Container(
           width: 64,
           height: 32,
+          padding: const EdgeInsets.all(4),
           decoration: viewModel.isInitialIndex
+              ? viewModel.selectedIndexDecoration()
+              : null,
+          child: SvgPicture.asset(
+            Images.profileIcon,
+          ),
+        ),
+        label: AppLocalizations.of(Get.context!)!.goal,
+      ),
+      BottomNavigationBarItem(
+        icon: Container(
+          width: 64,
+          height: 32,
+          decoration: viewModel.isFirstIndex
               ? viewModel.selectedIndexDecoration()
               : null,
           child: Padding(
@@ -52,7 +65,7 @@ class MainScreen extends Screen<MainViewModel> {
         icon: Container(
           width: 64,
           height: 32,
-          decoration: viewModel.isFirstIndex
+          decoration: viewModel.isSecondIndex
               ? viewModel.selectedIndexDecoration()
               : null,
           child: Padding(
@@ -68,7 +81,7 @@ class MainScreen extends Screen<MainViewModel> {
         icon: Container(
           width: 64,
           height: 32,
-          decoration: viewModel.isSecondIndex
+          decoration: viewModel.isThirdIndex
               ? viewModel.selectedIndexDecoration()
               : null,
           child: Padding(
@@ -85,7 +98,7 @@ class MainScreen extends Screen<MainViewModel> {
           width: 64,
           height: 32,
           padding: const EdgeInsets.all(4),
-          decoration: viewModel.isThirdIndex
+          decoration: viewModel.isFourthIndex
               ? viewModel.selectedIndexDecoration()
               : null,
           child: Image.asset(
@@ -93,20 +106,6 @@ class MainScreen extends Screen<MainViewModel> {
           ),
         ),
         label: AppLocalizations.of(Get.context!)!.interiorPower,
-      ),
-      BottomNavigationBarItem(
-        icon: Container(
-          width: 64,
-          height: 32,
-          padding: const EdgeInsets.all(4),
-          decoration: viewModel.isFourthIndex
-              ? viewModel.selectedIndexDecoration()
-              : null,
-          child: SvgPicture.asset(
-            Images.profileIcon,
-          ),
-        ),
-        label: AppLocalizations.of(Get.context!)!.profile,
       ),
     ];
   }

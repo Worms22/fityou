@@ -1,4 +1,4 @@
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_structure/features/body/data/body_repository_impl.dart';
 import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source.dart';
 import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source_impl.dart';
@@ -14,6 +14,11 @@ import 'package:flutter_structure/features/environment/data/data_sources/home_re
 import 'package:flutter_structure/features/environment/data/home_repository_impl.dart';
 import 'package:flutter_structure/features/environment/domain/home_repository.dart';
 import 'package:flutter_structure/features/environment/presentation/view_models/environment_view_model.dart';
+import 'package:flutter_structure/features/goal/data/data_sources/goal_remote_data_source.dart';
+import 'package:flutter_structure/features/goal/data/data_sources/goal_remote_data_source_impl.dart';
+import 'package:flutter_structure/features/goal/data/goal_repository_impl.dart';
+import 'package:flutter_structure/features/goal/domain/goal_repository.dart';
+import 'package:flutter_structure/features/goal/presentation/view_models/goal_view_model.dart';
 import 'package:flutter_structure/features/interior/data/data_sources/interior_remote_data_source.dart';
 import 'package:flutter_structure/features/interior/data/data_sources/interior_remote_data_source_impl.dart';
 import 'package:flutter_structure/features/interior/data/interior_repository_impl.dart';
@@ -110,6 +115,21 @@ class MainStructureBinding extends Binding {
     Get.lazyPut(
           () => ProfileViewModel(
         Get.find<ProfileRepository>(),
+      ),
+    );
+
+    //goal
+    Get.lazyPut<GoalRemoteDataSource>(GoalRemoteDataSourceImpl.new);
+
+    Get.lazyPut<GoalRepository>(
+          () => GoalRepositoryImpl(
+        Get.find<GoalRemoteDataSource>(),
+      ),
+    );
+
+    Get.lazyPut(
+          () => GoalViewModel(
+        Get.find<GoalRepository>(),
       ),
     );
 

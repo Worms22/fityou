@@ -1,4 +1,4 @@
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_structure/features/login/data/data_sources/login_remote_data_source.dart';
 import 'package:flutter_structure/features/login/data/data_sources/login_remote_data_source_impl.dart';
 import 'package:flutter_structure/features/login/data/login_repository_impl.dart';

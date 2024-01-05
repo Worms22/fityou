@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_structure/features/base/extensions/localizations_extension.dart';
 import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';

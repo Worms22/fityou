@@ -20,6 +20,7 @@ extension Images on Never {
   static const String mindIcon = 'assets/images/mind.png';
   static const String interiorIcon = 'assets/images/icon-interior.png';
   static const String profileIcon = 'assets/images/profileIcon.svg';
+  static const String goalIcon = 'assets/images/goalIcon.png';
 
   //environment
   static const String environmentButtonIcon = 'assets/images/leaf-icon.png';

@@ -165,10 +165,10 @@ packages:
     dependency: "direct main"
     description:
       name: connectivity_plus
-      sha256: b74247fad72c171381dbe700ca17da24deac637ab6d43c343b42867acb95c991
+      sha256: "224a77051d52a11fbad53dd57827594d3bd24f945af28bd70bab376d68d437f0"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.6"
+    version: "5.0.2"
   connectivity_plus_platform_interface:
     dependency: transitive
     description:
@@ -185,14 +185,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
-  crow:
-    dependency: "direct main"
-    description:
-      name: crow
-      sha256: "8dd25344014fcf5c2803302fdb400a52fb509cba246ff6e7db8aaa36293a9f26"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   crypto:
     dependency: transitive
     description:
@@ -253,18 +245,26 @@ packages:
     dependency: "direct main"
     description:
       name: dio
-      sha256: "7d328c4d898a61efc3cd93655a0955858e29a0aa647f0f9e02d59b3bb275e2e8"
+      sha256: "797e1e341c3dd2f69f2dad42564a6feff3bfb87187d05abb93b9609e6f1645c3"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.6"
+    version: "5.4.0"
   duckma_client:
     dependency: "direct main"
     description:
       name: duckma_client
-      sha256: "9033e043087a0ad1ac131e79f08d71b107b5d59b687d8008ec5d35e0c983bef9"
+      sha256: f8bfac4d2f210dc49c3c6cf5776c6b1682de2eb7a60789b77202eecd838d8a12
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "0.0.4"
+  duckma_crow_flutter:
+    dependency: "direct main"
+    description:
+      name: duckma_crow_flutter
+      sha256: "8eba199597f88355da45a68af6f33f5a8bcc251899b7503d70a1a51803edb696"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   fake_async:
     dependency: transitive
     description:
@@ -761,10 +761,10 @@ packages:
     dependency: "direct main"
     description:
       name: shared_preferences
-      sha256: b7f41bad7e521d205998772545de63ff4e6c97714775902c199353f8bf1511ac
+      sha256: "81429e4481e1ccfb51ede496e916348668fd0921627779233bd24cc3ff6abd02"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.1"
+    version: "2.2.2"
   shared_preferences_android:
     dependency: transitive
     description:

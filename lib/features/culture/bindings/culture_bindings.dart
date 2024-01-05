@@ -1,4 +1,4 @@
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_structure/features/culture/data/culture_repository_impl.dart';
 import 'package:flutter_structure/features/culture/data/data_sources/culture_remote_data_source.dart';
 import 'package:flutter_structure/features/culture/data/data_sources/culture_remote_data_source_impl.dart';

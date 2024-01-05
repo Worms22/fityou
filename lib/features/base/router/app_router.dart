@@ -1,4 +1,4 @@
-import 'package:crow/crow.dart';
+import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_structure/features/base/router/app_routes.dart';
 import 'package:flutter_structure/features/environment/presentation/view/pages/environment_page.dart';
 import 'package:flutter_structure/features/login/presentation/view/pages/login_page.dart';
