@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_structure/features/startpage/presentation/view/widgets/stepper_widget_emtpy.dart';
-import 'package:flutter_structure/features/startpage/presentation/view/widgets/stepper_widget_full.dart';
+import 'package:fit_you/features/startpage/presentation/view/widgets/stepper_widget_emtpy.dart';
+import 'package:fit_you/features/startpage/presentation/view/widgets/stepper_widget_full.dart';
 
 Widget stepperWidget(int index) {
   if (index == 0) {

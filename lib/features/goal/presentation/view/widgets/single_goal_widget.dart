@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Widget singleActivityButton({
+Widget singleGoalWidget({
   required double width,
   required String type,
   required String icon,
@@ -33,11 +33,14 @@ Widget singleActivityButton({
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
-                  child: Image.asset(
-                    icon,
-                    width: 50,
-                    height: 50,
-                    fit: BoxFit.contain,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Image.asset(
+                      icon,
+                      width: 50,
+                      height: 50,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               ),

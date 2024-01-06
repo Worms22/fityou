@@ -20,7 +20,7 @@ extension Images on Never {
   static const String mindIcon = 'assets/images/mind.png';
   static const String interiorIcon = 'assets/images/icon-interior.png';
   static const String profileIcon = 'assets/images/profileIcon.svg';
-  static const String goalIcon = 'assets/images/goalIcon.png';
+  static const String goalIcon = 'assets/images/goal-icon.png';
 
   //environment
   static const String environmentButtonIcon = 'assets/images/leaf-icon.png';
@@ -38,6 +38,11 @@ extension Images on Never {
   //interior
   static const String interiorBackground = 'assets/images/interior-background.png';
   static const String mindButtonIcon = 'assets/images/mind-icon.png';
+
+  //goal
+  static const String giftButtonIcon = 'assets/images/gift-icon.png';
+  static const String goalBackground = 'assets/images/goal-background.png';
+
 
 
   Widget customSvgAsset({

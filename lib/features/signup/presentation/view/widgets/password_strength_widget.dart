@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/dimensions.dart';
-import 'package:flutter_structure/features/base/utils/password_validator.dart';
-import 'package:flutter_structure/features/signup/presentation/view/widgets/password_validators_text.dart';
-import 'package:flutter_structure/features/signup/presentation/view_models/signup_view_model.dart';
+import 'package:fit_you/features/base/utils/namespaces/dimensions.dart';
+import 'package:fit_you/features/base/utils/password_validator.dart';
+import 'package:fit_you/features/signup/presentation/view/widgets/password_validators_text.dart';
+import 'package:fit_you/features/signup/presentation/view_models/signup_view_model.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 Widget passwordStrengthWidget(dynamic viewModel) {

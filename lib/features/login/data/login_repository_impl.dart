@@ -1,7 +1,7 @@
 
 
-import 'package:flutter_structure/features/login/data/data_sources/login_remote_data_source.dart';
-import 'package:flutter_structure/features/login/domain/login_repository.dart';
+import 'package:fit_you/features/login/data/data_sources/login_remote_data_source.dart';
+import 'package:fit_you/features/login/domain/login_repository.dart';
 
 class LoginRepositoryImpl extends LoginRepository {
   LoginRepositoryImpl(this._remoteDataSource);

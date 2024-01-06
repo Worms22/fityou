@@ -1,8 +1,8 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
-import 'package:flutter_structure/features/splashscreen/presentation/view_model/splash_view_model.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/base/utils/namespaces/images.dart';
+import 'package:fit_you/features/splashscreen/presentation/view_model/splash_view_model.dart';
 import 'package:get/get.dart';
 
 

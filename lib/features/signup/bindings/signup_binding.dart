@@ -1,9 +1,9 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
-import 'package:flutter_structure/features/signup/data/data_sources/signup_data_source.dart';
-import 'package:flutter_structure/features/signup/data/data_sources/signup_data_source_impl.dart';
-import 'package:flutter_structure/features/signup/data/signup_repository_impl.dart';
-import 'package:flutter_structure/features/signup/domain/signup_repository.dart';
-import 'package:flutter_structure/features/signup/presentation/view_models/signup_view_model.dart';
+import 'package:fit_you/features/signup/data/data_sources/signup_data_source.dart';
+import 'package:fit_you/features/signup/data/data_sources/signup_data_source_impl.dart';
+import 'package:fit_you/features/signup/data/signup_repository_impl.dart';
+import 'package:fit_you/features/signup/domain/signup_repository.dart';
+import 'package:fit_you/features/signup/presentation/view_models/signup_view_model.dart';
 
 import 'package:get/get.dart';
 

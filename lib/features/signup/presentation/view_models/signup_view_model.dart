@@ -1,11 +1,11 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_structure/features/base/extensions/validate_email_extension.dart';
-import 'package:flutter_structure/features/base/router/app_routes.dart';
-import 'package:flutter_structure/features/base/utils/password_validator.dart';
-import 'package:flutter_structure/features/base/utils/typedefs.dart';
-import 'package:flutter_structure/features/signup/domain/signup_repository.dart';
+import 'package:fit_you/features/base/extensions/validate_email_extension.dart';
+import 'package:fit_you/features/base/router/app_routes.dart';
+import 'package:fit_you/features/base/utils/password_validator.dart';
+import 'package:fit_you/features/base/utils/typedefs.dart';
+import 'package:fit_you/features/signup/domain/signup_repository.dart';
 import 'package:get/get.dart';
 
 class SignupViewModel extends ViewModel with StateMixin<dynamic> {

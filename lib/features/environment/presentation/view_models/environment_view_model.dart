@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_structure/features/base/genaral_entities/activity_entity.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
-import 'package:flutter_structure/features/environment/domain/home_repository.dart';
+import 'package:fit_you/features/base/genaral_entities/activity_entity.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/base/utils/namespaces/images.dart';
+import 'package:fit_you/features/environment/domain/home_repository.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

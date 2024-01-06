@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/contracts/themeable.dart';
+import 'package:fit_you/features/base/contracts/themeable.dart';
 
 class AppTheme extends Themeable {
   @override

@@ -1,13 +1,13 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/extensions/localizations_extension.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
-import 'package:flutter_structure/features/base/widgets/app_button.dart';
-import 'package:flutter_structure/features/base/widgets/app_circular_progress.dart';
-import 'package:flutter_structure/features/login/presentation/view/widgets/input_data_section.dart';
-import 'package:flutter_structure/features/login/presentation/view/widgets/register_section.dart';
-import 'package:flutter_structure/features/login/presentation/view_models/login_view_model.dart';
+import 'package:fit_you/features/base/extensions/localizations_extension.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/base/utils/namespaces/images.dart';
+import 'package:fit_you/features/base/widgets/app_button.dart';
+import 'package:fit_you/features/base/widgets/app_circular_progress.dart';
+import 'package:fit_you/features/login/presentation/view/widgets/input_data_section.dart';
+import 'package:fit_you/features/login/presentation/view/widgets/register_section.dart';
+import 'package:fit_you/features/login/presentation/view_models/login_view_model.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 

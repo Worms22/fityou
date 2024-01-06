@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
 
 class AppButton extends StatelessWidget {
   const AppButton({

@@ -1,11 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/extensions/localizations_extension.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
-import 'package:flutter_structure/features/base/widgets/app_button.dart';
-import 'package:flutter_structure/features/startpage/presentation/view/widgets/carousel_element.dart';
-import 'package:flutter_structure/features/startpage/presentation/view_models/start_view_model.dart';
+import 'package:fit_you/features/base/extensions/localizations_extension.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/base/widgets/app_button.dart';
+import 'package:fit_you/features/startpage/presentation/view/widgets/carousel_element.dart';
+import 'package:fit_you/features/startpage/presentation/view_models/start_view_model.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 

@@ -3,7 +3,7 @@ import 'dart:developer' as developer;
 import 'package:duckma_client/duckma_client.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_environment/flutter_environment.dart';
-import 'package:flutter_structure/features/base/failures/server_failure/server_failure.dart';
+import 'package:fit_you/features/base/failures/server_failure/server_failure.dart';
 
 enum LogStatus {
   tyring,

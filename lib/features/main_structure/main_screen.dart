@@ -1,8 +1,8 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/images.dart';
-import 'package:flutter_structure/features/main_structure/main_view_model.dart';
+import 'package:fit_you/features/base/utils/namespaces/images.dart';
+import 'package:fit_you/features/main_structure/main_view_model.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
@@ -39,8 +39,8 @@ class MainScreen extends Screen<MainViewModel> {
           decoration: viewModel.isInitialIndex
               ? viewModel.selectedIndexDecoration()
               : null,
-          child: SvgPicture.asset(
-            Images.profileIcon,
+          child: Image.asset(
+            Images.goalIcon,
           ),
         ),
         label: AppLocalizations.of(Get.context!)!.goal,

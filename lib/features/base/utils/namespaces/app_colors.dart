@@ -26,5 +26,11 @@ extension AppColors on Never {
   static const Color interiorBlue = Color(0xffcaf0f8);
   static const Color interiorBlueAccent = Color(0xff48cae4);
 
+  //goal
+  static const Color goalPurple = Color(0xffe5d0ff);
+  static const Color goalPurpleAccent = Color(0xffbf8bff);
+  static const Color gold = Color(0xffFFEF99);
+  static const Color silver = Color(0xffe5e5e5);
+  static const Color bronze = Color(0xfff9cb9c);
 
 }

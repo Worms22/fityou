@@ -1,10 +1,10 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
-import 'package:flutter_structure/features/profile/presentation/view/widgets/setting_section.dart';
-import 'package:flutter_structure/features/profile/presentation/view/widgets/user_section.dart';
-import 'package:flutter_structure/features/profile/presentation/view_models/profile_view_model.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/profile/presentation/view/widgets/setting_section.dart';
+import 'package:fit_you/features/profile/presentation/view/widgets/user_section.dart';
+import 'package:fit_you/features/profile/presentation/view_models/profile_view_model.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 

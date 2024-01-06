@@ -1,5 +1,5 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
-import 'package:flutter_structure/features/base/token/domain/entity/token_entity.dart';
+import 'package:fit_you/features/base/token/domain/entity/token_entity.dart';
 
 abstract class TokenRepository extends Repository {
   Future<void> saveToken(TokenEntity token);

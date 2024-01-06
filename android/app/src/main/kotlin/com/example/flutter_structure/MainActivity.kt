@@ -1,4 +1,4 @@
-package com.example.flutter_structure
+package com.wormsdev.fityou
 
 import io.flutter.embedding.android.FlutterActivity
 

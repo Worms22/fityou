@@ -1,6 +1,6 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:flutter_structure/features/base/router/app_routes.dart';
+import 'package:fit_you/features/base/router/app_routes.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -22,7 +22,9 @@ class SplashViewModel extends ViewModel with StateMixin<dynamic> {
     if (accessToken != null && accessToken.isNotEmpty) {
       await navigateToMainScreen();
     } else {
-      await navigateToStartPage();
+      await navigateToMainScreen();
+
+      //await navigateToStartPage();
     }
   }
 

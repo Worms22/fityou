@@ -1,9 +1,9 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
-import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source.dart';
-import 'package:flutter_structure/features/body/data/data_sources/body_remote_data_source_impl.dart';
-import 'package:flutter_structure/features/body/data/body_repository_impl.dart';
-import 'package:flutter_structure/features/body/domain/body_repository.dart';
-import 'package:flutter_structure/features/body/presentation/view_models/body_view_model.dart';
+import 'package:fit_you/features/body/data/data_sources/body_remote_data_source.dart';
+import 'package:fit_you/features/body/data/data_sources/body_remote_data_source_impl.dart';
+import 'package:fit_you/features/body/data/body_repository_impl.dart';
+import 'package:fit_you/features/body/domain/body_repository.dart';
+import 'package:fit_you/features/body/presentation/view_models/body_view_model.dart';
 import 'package:get/get.dart';
 
 

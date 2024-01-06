@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_colors.dart';
-import 'package:flutter_structure/features/base/utils/namespaces/app_styles.dart';
-import 'package:flutter_structure/features/base/utils/password_validator.dart';
-import 'package:flutter_structure/features/signup/presentation/view_models/signup_view_model.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:fit_you/features/base/utils/namespaces/app_styles.dart';
+import 'package:fit_you/features/base/utils/password_validator.dart';
+import 'package:fit_you/features/signup/presentation/view_models/signup_view_model.dart';
 
 Widget passwordValidatorsText(
   String? title,

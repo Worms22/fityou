@@ -1,6 +1,6 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
-import 'package:flutter_structure/features/base/app/presentation/app_view_model.dart';
-import 'package:flutter_structure/features/base/network/client_service.dart';
+import 'package:fit_you/features/base/app/presentation/app_view_model.dart';
+import 'package:fit_you/features/base/network/client_service.dart';
 import 'package:get/get.dart';
 
 class AppBinding extends Binding {

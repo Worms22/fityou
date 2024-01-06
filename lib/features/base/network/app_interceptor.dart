@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:duckma_client/duckma_client.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_structure/features/base/extensions/http_extension.dart';
-import 'package:flutter_structure/features/base/extensions/localizations_extension.dart';
-import 'package:flutter_structure/features/base/sevrices/navigation_service.dart';
-import 'package:flutter_structure/features/base/token/domain/entity/token_entity.dart';
-import 'package:flutter_structure/features/base/token/domain/token_repository.dart';
-import 'package:flutter_structure/features/base/utils/logger.dart';
+import 'package:fit_you/features/base/extensions/http_extension.dart';
+import 'package:fit_you/features/base/extensions/localizations_extension.dart';
+import 'package:fit_you/features/base/sevrices/navigation_service.dart';
+import 'package:fit_you/features/base/token/domain/entity/token_entity.dart';
+import 'package:fit_you/features/base/token/domain/token_repository.dart';
+import 'package:fit_you/features/base/utils/logger.dart';
 import 'package:get/get.dart' show ExtensionSnackbar, Get, Inst, SnackPosition;
 
 class AppInterceptor extends Interceptor {
