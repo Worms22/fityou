@@ -66,7 +66,7 @@ class GoalViewModel extends ViewModel with StateMixin<dynamic> {
     final ConnectivityResult connectivityResult =
         await Connectivity().checkConnectivity();
     isConnected.value = (connectivityResult != ConnectivityResult.none);
-    myPoints.value = await _goalRepository.getPoints();
+    myPoints.value = await _goalRepository.getPoints() ?? 0;
     change(null, status: RxStatus.success());
     super.onReady();
   }

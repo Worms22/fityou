@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
+import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 Widget singleActivityButton({
@@ -16,7 +16,7 @@ Widget singleActivityButton({
       border: Border.all(color: Colors.grey),
     ),
     width: width,
-    height: 60,
+    height: 50,
     child: Stack(
       alignment: Alignment.centerLeft,
       children: <Widget>[
@@ -26,7 +26,7 @@ Widget singleActivityButton({
             borderRadius: BorderRadius.circular(30),
           ),
           width: width / 2,
-          height: 60,
+          height: 50,
           child: Row(
             children: <Widget>[
               Padding(
@@ -35,8 +35,8 @@ Widget singleActivityButton({
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
                     icon,
-                    width: 50,
-                    height: 50,
+                    width: 40,
+                    height: 40,
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -50,7 +50,7 @@ Widget singleActivityButton({
           child: Text(
             title,
             style: GoogleFonts.montserrat(
-              fontSize: 17,
+              fontSize: 15,
               fontWeight: FontWeight.w700,
               color: AppColors.black,
             ),
