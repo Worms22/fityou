@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -13,9 +14,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class GoalViewModel extends ViewModel with StateMixin<dynamic> {
   GoalViewModel(
-    this._bodyRepository,
+    this._goalRepository,
   );
-  final GoalRepository _bodyRepository;
+  final GoalRepository _goalRepository;
 
   RxString motivationalSentence = ''.obs;
   RxInt numb = 6.obs;
@@ -23,6 +24,8 @@ class GoalViewModel extends ViewModel with StateMixin<dynamic> {
   RxBool isConnected = true.obs;
   String detailTitle = '';
   String? token;
+  RxInt myPoints = 0.obs;
+
   List<ActivityEntity> buttonList = <ActivityEntity>[
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.runningTitle,
@@ -63,7 +66,7 @@ class GoalViewModel extends ViewModel with StateMixin<dynamic> {
     final ConnectivityResult connectivityResult =
         await Connectivity().checkConnectivity();
     isConnected.value = (connectivityResult != ConnectivityResult.none);
-
+    myPoints.value = await _goalRepository.getPoints();
     change(null, status: RxStatus.success());
     super.onReady();
   }

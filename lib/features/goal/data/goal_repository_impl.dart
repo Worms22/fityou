@@ -6,4 +6,9 @@ class GoalRepositoryImpl extends GoalRepository {
 
   final GoalRemoteDataSource _remoteDataSource;
 
+
+  @override
+  Future<int?> getPoints() {
+    return _remoteDataSource.getPoints();
+  }
 }

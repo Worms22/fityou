@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -7,6 +8,7 @@ import 'package:fit_you/features/base/utils/password_validator.dart';
 import 'package:fit_you/features/base/utils/typedefs.dart';
 import 'package:fit_you/features/signup/domain/signup_repository.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SignupViewModel extends ViewModel with StateMixin<dynamic> {
   SignupViewModel(this._signupRepository);
@@ -46,12 +48,26 @@ class SignupViewModel extends ViewModel with StateMixin<dynamic> {
   Future<void> signup() async {
     //da cambiareeeeeee
     change(loading, status: RxStatus.loading());
-    /*final bool isSignedOk = await _signupRepository.signup(
-          emailController.text, passwordController.text,); */
+    final bool isSignedOk = await _signupRepository.signup(
+      emailController.text,
+      passwordController.text,
+    );
 
-    const bool isSignedOk = true;
+    //const bool isSignedOk = true;
     if (isSignedOk) {
       change(loading, status: RxStatus.success());
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      final String? accessToken = prefs.getString('jwt_token');
+      await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(accessToken)
+          .set(
+        <String, int>{
+          'points': 0,
+        },
+        SetOptions(merge: true),
+      );
+
       await Get.offAllNamed(Routes.mainPage);
     } else {
       change(loading, status: RxStatus.success());
@@ -130,8 +146,7 @@ class SignupViewModel extends ViewModel with StateMixin<dynamic> {
         emailController.text.isValidEmail() &&
         passwordController.text.isNotEmpty &&
         passwordController.text == passwordConfirmController.text &&
-        Validators.checkPassword(passwordController.text) == 3
-    ) {
+        Validators.checkPassword(passwordController.text) == 3) {
       isDisabled = false;
     } else {
       isDisabled = true;

@@ -38,6 +38,9 @@ dependencies:
   package_info_plus: ^4.1.0
   keycloak_flutter: ^0.0.21
   flutter_html: ^3.0.0-beta.2
+  firebase_auth: ^4.16.0
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.14.0
 
 
 dev_dependencies:

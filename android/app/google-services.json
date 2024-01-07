@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "940283505318",
+    "project_id": "fityou-1b008",
+    "storage_bucket": "fityou-1b008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940283505318:android:23ebb3e629e69accc0a267",
+        "android_client_info": {
+          "package_name": "com.wormsdev.fityou"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALIt_D99SaOOu6c0G8MgLOUcM61yBc6b4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

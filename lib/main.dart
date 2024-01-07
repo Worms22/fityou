@@ -1,4 +1,5 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart' as Crow;
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as service;
 import 'package:flutter/services.dart';
@@ -37,6 +38,8 @@ void main() async {
     DeviceOrientation.portraitUp,
   ]);
 
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     const MyApp(),
   );

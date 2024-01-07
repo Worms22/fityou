@@ -1,4 +1,5 @@
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:fit_you/features/base/router/app_routes.dart';
@@ -34,18 +35,18 @@ class LoginViewModel extends ViewModel with StateMixin<dynamic> {
       change(loading, status: RxStatus.success());
       _showSnackBarOnError(AppLocalizations.of(context)!.noCorrectCredentials);
     } else {
-      //de-comment this to use the real login function
-      /*
       final bool isLoggedOk = await _loginRepository.login(
-          emailController.text, passwordController.text,);*/
-      const bool isLoggedOk = true;
+        emailController.text,
+        passwordController.text,
+      );
       if (isLoggedOk) {
         change(loading, status: RxStatus.success());
         await Get.offAllNamed(Routes.mainPage);
       } else {
         change(loading, status: RxStatus.success());
         _showSnackBarOnError(
-            AppLocalizations.of(context)!.noCorrectCredentials,);
+          AppLocalizations.of(context)!.noCorrectCredentials,
+        );
       }
     }
   }
@@ -64,7 +65,6 @@ class LoginViewModel extends ViewModel with StateMixin<dynamic> {
   void updatePassword() {
     obscurePassword.value = !obscurePassword.value;
   }
-
 
   Future<void> goToSignup() async {
     await Get.toNamed(Routes.registration);

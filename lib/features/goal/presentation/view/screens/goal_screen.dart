@@ -47,6 +47,48 @@ class GoalScreen extends Screen<GoalViewModel> {
                           SizedBox(
                             height: Get.height * 0.01,
                           ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: AppColors.goalPurpleAccent,
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                              child: Row(
+                                children: <Widget>[
+                                  Text(
+                                    AppLocalizations.of(Get.context!)!.yourPoints,
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 30,
+                                      fontWeight: FontWeight.w600,
+                                      color: AppColors.white,
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: AppColors.goalPurpleAccent,
+                                      borderRadius: BorderRadius.circular(15),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Obx(
+                                          () => Text(
+                                          viewModel.myPoints.value.toString(),
+                                          style: GoogleFonts.montserrat(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.w600,
+                                            color: AppColors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: Get.height * 0.01,),
                           giftSection(),
                           SizedBox(
                             height: Get.height * 0.05,
