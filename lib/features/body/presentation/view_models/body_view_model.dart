@@ -64,6 +64,7 @@ class BodyViewModel extends ViewModel with StateMixin<dynamic> {
         await Connectivity().checkConnectivity();
     isConnected.value = (connectivityResult != ConnectivityResult.none);
 
+    await _bodyRepository.getBodyDetails('email', 'password');
     change(null, status: RxStatus.success());
     super.onReady();
   }
