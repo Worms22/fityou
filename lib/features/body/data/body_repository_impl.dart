@@ -7,7 +7,7 @@ class BodyRepositoryImpl extends BodyRepository {
   final BodyRemoteDataSource _remoteDataSource;
 
   @override
-  Future<dynamic> getBodyDetails(String email, String password) {
-    return _remoteDataSource.getBodyDetails(email, password);
+  Future<dynamic> getBodyDetails() {
+    return _remoteDataSource.getBodyDetails();
   }
 }

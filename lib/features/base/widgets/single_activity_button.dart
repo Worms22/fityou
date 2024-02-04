@@ -1,5 +1,7 @@
+import 'package:fit_you/features/base/extensions/build_context_extension.dart';
 import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 Widget singleActivityButton({
@@ -16,7 +18,7 @@ Widget singleActivityButton({
       border: Border.all(color: Colors.grey),
     ),
     width: width,
-    height: 50,
+    height: Get.height * 0.06,
     child: Stack(
       alignment: Alignment.centerLeft,
       children: <Widget>[
@@ -26,7 +28,7 @@ Widget singleActivityButton({
             borderRadius: BorderRadius.circular(30),
           ),
           width: width / 2,
-          height: 50,
+          height: Get.height * 0.06,
           child: Row(
             children: <Widget>[
               Padding(

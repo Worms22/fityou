@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:duckma_crow_flutter/duckma_crow_flutter.dart';
+import 'package:fit_you/features/body/domain/entities/body_entity.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:fit_you/features/base/genaral_entities/activity_entity.dart';
 import 'package:fit_you/features/base/utils/namespaces/app_colors.dart';
@@ -9,6 +10,7 @@ import 'package:fit_you/features/base/utils/namespaces/images.dart';
 import 'package:fit_you/features/body/domain/body_repository.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 
 
 class BodyViewModel extends ViewModel with StateMixin<dynamic> {
@@ -23,6 +25,8 @@ class BodyViewModel extends ViewModel with StateMixin<dynamic> {
   RxBool isConnected = true.obs;
   String detailTitle = '';
   String? token;
+  late final BodyEntity? bodyConfig;
+
   List<ActivityEntity> buttonList = <ActivityEntity>[
     ActivityEntity(
       title: AppLocalizations.of(Get.context!)!.runningTitle,
@@ -64,7 +68,7 @@ class BodyViewModel extends ViewModel with StateMixin<dynamic> {
         await Connectivity().checkConnectivity();
     isConnected.value = (connectivityResult != ConnectivityResult.none);
 
-    await _bodyRepository.getBodyDetails('email', 'password');
+    bodyConfig = await _bodyRepository.getBodyDetails();
     change(null, status: RxStatus.success());
     super.onReady();
   }
